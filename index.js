@@ -47,13 +47,25 @@ for(let number = 1; number <= 100; number++){
 }*/
 
 let numero =8;
-let output = "";
+
 
 for(let i=1;i<=numero;i++){
+    let output = "";
     for(let j=1;j<=numero;j++){
         ((i+j)%2===0 ? output +=" " : output += "#")
     }
     output += "\n";
     console.log(output)
 }
+
+let number = 5;
+for(let i=1;i<=number;i++){
+    let output = "";
+    for(let j=1;j<=i;j++){
+        output = output + "#";
+    }
+    
+    console.log(output)
+}
+
 

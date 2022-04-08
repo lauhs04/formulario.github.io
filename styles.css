@@ -76,3 +76,39 @@ input{
         margin-left: 0;
     }
 }
+
+.div-mains{
+    display: flex;
+    height: 20vh;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+    
+}
+
+.div1{
+   order: 2; 
+  
+   flex-basis: 100px;
+}
+
+.div4{
+    order: 1;
+    flex-grow: 1;
+}
+
+.div2{
+    align-self: center;
+    flex-grow: 1;
+}
+
+.div3{
+    align-self: flex-end;
+    flex-grow: 1;
+}
+.div-mains div{
+    
+    background-color: rgb(126, 55, 127);
+    
+    
+}
