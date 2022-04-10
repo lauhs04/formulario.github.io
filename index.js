@@ -234,5 +234,38 @@ humus(2);
   console.log(contarFs("LAURA", "A"))
   console.log(contarCaracteres("LAURA"))*/
 function btnGuardarDatos(){
-    alert("hola a todos")
+    let nombre = document.getElementById("nombres").value;
+    let apellido = document.getElementById("apellidos").value;
+    let fNacimiento = document.getElementsByName("fNacimiento")[0].value;//por qué no me añade la fn al array
+    let direccion = document.getElementById("direccion").value;
+    let telefono = document.getElementById("telefono").value;
+
+    if(nombre.length < 5) {
+        alert("Nombre muy corto")
+        return false;
+    } 
+
+    
+    
+    let datosPersona = {
+        "datosPersonales":{
+            "nombres": nombre,
+            "apellidos": apellido,
+            "fechaNacimiento": fNacimiento
+        },
+
+        "datosContacto" :{
+            "direccion": direccion,
+            "telefono": telefono
+        }
+    }
+
+    console.log(datosPersona);
+
+   
+
+    document.getElementById("nombres").value = "";
+    document.getElementById("apellidos").value = "";
+    document.getElementById("fNacimiento").value = "";
+
 }
