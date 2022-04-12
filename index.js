@@ -7,7 +7,10 @@ function btnGuardarDatos(){
     let telefono = document.getElementById("telefono").value;
     let expresiones = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
     if(nombre.length < 5) {
-        alert("Nombre muy corto")
+        let mensajeError = document.createElement("span");
+        mensajeError.id = "mensaje-error-nombres";
+        mensajeError.textContent = "Por favor digite un nombre más largo";
+        document.getElementById("container-nombres").appendChild(mensajeError);
         return false;
     } 
     if(expresiones.test(nombre)){
