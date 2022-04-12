@@ -55,6 +55,15 @@ input{
     width: 100%;
 }
 
+#container-nombres > span{
+    color: red;
+    font-family: sans-serif;
+    margin-left: 10px;
+    font-size: 0.7rem;
+    background-color: black;
+    padding: 0.2rem;
+}
+
 @media screen and (max-width: 900px){
     .div-form{
         display: block;
