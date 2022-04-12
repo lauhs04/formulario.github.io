@@ -60,8 +60,12 @@ input{
     font-family: sans-serif;
     margin-left: 10px;
     font-size: 0.7rem;
-    background-color: black;
+    
     padding: 0.2rem;
+}
+
+.container-radios input{
+    width: auto;
 }
 
 @media screen and (max-width: 900px){

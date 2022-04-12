@@ -34,14 +34,42 @@
                                         <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus nombres">
                                     </label>
                                 </div>
-                                <label>
-                                    Apellidos:
-                                    <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus apellidos">
-                                </label>
+                                <div id="container-apellidos">
+                                    <label>
+                                        Apellidos:
+                                        <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus apellidos" disabled>
+                                    </label>
+                                </div>
                                 <label>
                                     Fecha Nacimiento:
-                                    <input type="date" name="fNacimiento" value="" id="fNacimiento" max="2009-09-27" min="1997-01-01">
+                                    <input type="date" name="fNacimiento" value="" id="fNacimiento" max="2009-09-27" min="1997-01-01" disabled>
                                 </label>
+                                <div class="container-radios">
+                                    <label>Estado civil:</label>
+                                    <label>
+                                        Solter(@)<input type="radio" id="soltero" name="estadoCivil" value="1">
+                                        
+                                    </label>
+                                    <label>
+                                        Casado(@)
+                                        <input type="radio" id="casado" name="estadoCivil" value="2">
+                                    </label>
+                                    <label>
+                                        Unión libre
+                                        <input type="radio" id="unionLibre" name="estadoCivil" value="3">
+                                    </label>
+                                </div>
+                                <div class="container-checkbox">
+                                    <label>Hobbies</label>
+                                    <label>
+                                        Libros
+                                        <input type="checkbox" id="libros" name="libros" value="1">
+                                    </label>
+                                    <label>
+                                        Películas
+                                        <input type="checkbox" id="peliculas" name="peliculas" value="2">
+                                    </label>
+                                </div>
                             </div>
                             <div class="div-form">
                                 <fieldset>Datos de Contacto</fieldset>
@@ -52,6 +80,16 @@
                                 <label>
                                     Telefono:
                                     <input type="tel" id="telefono" name="telefono" value="" placeholder="telefono">
+                                </label>
+                                <label>
+                                    Ciudades:
+                                    <select id="ciudades">
+                                    <option value="0" selected>Seleccione una ciudad</option>
+                                    <option value="1" checked>Medellin</option>
+                                    <option value="2">Bogotá</option>
+                                    <option value="3">Cali</option>
+                                    <option value="4">Barranquilla</option>
+                                    </select>
                                 </label>
                             </div>
                         </div>
