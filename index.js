@@ -1,5 +1,15 @@
 let getById = (id) => {return document.getElementById(id)};
 
+
+function cambioNombre(){
+    if(getById("nombres").value.length < 5){
+        alert("digite un nombre de 6 caracteres");
+        getById("apellidos").disabled = true;
+    } else {
+        getById("apellidos").disabled = false;
+    }
+}
+
 function btnGuardarDatos(){
     
     let nombre = getById("nombres").value;
@@ -49,7 +59,7 @@ function btnGuardarDatos(){
         alert("caracteres no permitidos")
     }
 
-    getById("apellidos").disabled = false;
+
 
     // capturando datos
     let datosPersona = {
