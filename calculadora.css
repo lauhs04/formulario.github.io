@@ -22,7 +22,7 @@ table{
     height: 3.125rem;
     font-size: 1.3rem;
     color: #3c3c3c;
-    border-style: none;
+    
 }
 
 .btnOperacion{
@@ -32,7 +32,7 @@ table{
     height: 3.125rem;
     color: rgb(249, 245, 240);
     font-size: 1.3rem;
-    border-style: none;
+   
 }
 
 #resultado{
