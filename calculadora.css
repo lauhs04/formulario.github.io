@@ -10,6 +10,33 @@ body{
 }
 
 table{
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.btnNumero{
+    width: 100%;
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    height: 3.125rem;
+    font-size: 1.3rem;
+    color: #3c3c3c;
+    border-style: none;
+}
+
+.btnOperacion{
+    width: 100%;
+    background-color: #3c3c3c;
+    border-radius: 2px;
+    height: 3.125rem;
+    color: rgb(249, 245, 240);
+    font-size: 1.3rem;
+    border-style: none;
+}
+
+#resultado{
+    width: 100%;
+    box-sizing: border-box;
+    height: 3.125rem;
 }
