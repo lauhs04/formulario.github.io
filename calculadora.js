@@ -13,20 +13,26 @@ function iniciarEventos(){
     let obtenerOperando = document.getElementsByClassName("btnOperacion");
     for(i=0;i<obtenerOperando.length;i++){
         obtenerOperando[i].addEventListener("click",capturarOperacion);
+      //  obtenerOperando[i].addEventListener("click", generarOperador);
     }
 }
 
 function generarNumero(event){
     let numero = event.target.textContent;
     document.getElementById("resultado").value += numero;
-}
+} 
+
+/*function generarOperador(event){
+    let operador = event.target.textContent;
+    document.getElementById("resultado").value += operador;
+}*/
 
 function capturarOperacion(event){
     
-    operacion = event.target.textContent;
-    
+    let operacion = event.target.textContent;
+    operandoDos= document.getElementById("resultado").value;
     if(operacion === "="){
-        operandoDos= document.getElementById("resultado").value;
+        
         switch(operacionAnterior){
             case "*":
                 resultados = parseFloat(operandoUno) * parseFloat(operandoDos);
