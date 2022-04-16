@@ -81,12 +81,17 @@ header{
 }
 
 .link-boton{
-    background-color: plum;
-    width: 12.5rem;
+    background-color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 0.7rem;
+    border-radius: 6px;
+    border-style: none;
+    text-decoration-line: none;
+    color: #3c3c3c;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width:332px){
     .container-javascript{
