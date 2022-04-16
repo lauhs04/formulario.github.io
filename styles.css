@@ -20,6 +20,7 @@ header{
 
 .logo-icon{
     font-size: 6rem;
+    color: #3c3c3c;
 }
 
 .logo-icon2{
@@ -61,8 +62,31 @@ header{
 
 .link-title{
     text-decoration: none;
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     border-radius: 2px;
+}
+
+.container-contenido{
+    background-color: #e6e6e6;
+    width: 70vw;
+    margin: 1rem auto;
+}
+
+.container-title{
+    display: flex;
+    justify-content:baseline;
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+}
+
+.link-boton{
+    background-color: plum;
+    width: 12.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 @media screen and (min-width:332px){
     .container-javascript{
@@ -72,7 +96,7 @@ header{
         justify-content: space-evenly;
         gap: 2rem;
         padding: 1rem 0;
-        background-color: aqua;
+        background-color: rgb(255, 255, 255);
         
     }
 }
@@ -96,7 +120,7 @@ header{
         flex-wrap: wrap;
         justify-content: space-evenly;
         padding: 1rem 0;
-        background-color: rgb(191, 24, 24);
+        background-color: rgb(255, 255, 255);
         
     }
 }
@@ -108,7 +132,7 @@ header{
         flex-wrap: wrap;
         justify-content: space-evenly;
         padding: 1rem 0;
-        background-color: rgb(185, 191, 24);
+        background-color: rgb(255, 255, 255);
         
     }
 }
