@@ -54,11 +54,11 @@
                                 <input type="phone" id="telefono" name="telefono" value="" placeholder="telefono">
                             </label>
                         </div>
-                        <div>
-                            <button type="button" id="btnGuardar" onclick="guardarDatosPersona(event);">
+                        <div class="container-btn">
+                            <button type="button" id="btnGuardar" onclick="guardarDatosPersona(event);" class="btnGuardar">
                                 <i class="fa-solid fa-floppy-disk"></i>
                             </button>
-                            <button type="reset" id="btnReset">
+                            <button type="reset" id="btnReset" class="btnReset">
                                 <i class="fa-solid fa-trash-can"></i>
                             </button>
                             <input type="hidden" id="accion" value="guardar">
@@ -67,7 +67,7 @@
                     </fieldset>
                 </form>
             </div>
-            <div>
+            <div class="container-tabla">
                 <table class="tabla-datos" id="tabla-datoss">
                     <caption>Datos Personales</caption>
                     <thead>
