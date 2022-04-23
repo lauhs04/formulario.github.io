@@ -95,7 +95,7 @@ div button{
     input::placeholder, select, .input-fNacimiento, .input-edad, .input-estadoCivil{
         font-size: 0.6rem;
         padding-left: 0.3rem;
-        color: #971717;
+        color: #3c3c3c;
     }
 
     .form-datos div input, .form-datos div select, .input-edad{
@@ -135,7 +135,26 @@ div button{
         padding: 0;
     }
 }
+@media screen and (min-width: 576px){
+    .form-datos, .container-tabla{
+        width: 85%;
+        
+    }
+}
 
+@media screen and (min-width: 786px){
+    .form-datos, .container-tabla{
+        width: 50vw;
+        
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .form-datos, .container-tabla{
+        width: 40vw;
+        
+    }
+}
 .volver{
     font-family: sans-serif;
     font-size: 0.6rem;
