@@ -95,6 +95,7 @@ div button{
     input::placeholder, select, .input-fNacimiento, .input-edad, .input-estadoCivil{
         font-size: 0.6rem;
         padding-left: 0.3rem;
+        color: #8a8a8a;
     }
 
     .form-datos div input, .form-datos div select, .input-edad{
