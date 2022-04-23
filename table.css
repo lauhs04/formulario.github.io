@@ -9,8 +9,8 @@ body{
 }
 
 fieldset{
-    border-radius: 10px;
-    border-color: transparent;
+    
+    border-color: #e6e6e6;
 }
 
 input, select{
@@ -83,18 +83,17 @@ div button{
 .container-btn{
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
-   
-   
+   justify-content: center;
+   gap: 0 10px;
 }
-.btnGuardar, .btnReset, .editar, .eliminar{
-    height: 35px;
-    color: #3c3c3c;
-    border-color: #3c3c3c00;
-    background-color: none;
-    border-radius: 5px;
-    padding: 0;
-}
+
+.btnGuardar, .btnReset{
+        width: 10%;
+        height: 35px;
+        padding: 0.3rem;
+        border-radius: 50%;
+    }
+    
 
 @media screen and (min-width: 400px){
     
@@ -127,17 +126,12 @@ div button{
         height: 25px;
     }
 
-    .btnGuardar, .btnReset, .editar, .eliminar{
-        height: 25px;
-        border: #3c3c3c 1px solid;
-        background-color: rgba(255, 255, 255, 0);
-        border-radius: 5px;
-        padding: 0;
-    }
+  
 
     .editar, .eliminar{
         border-radius: 0ch;
         border: none;
+        background-color: white;
     }
 
     caption{
@@ -162,6 +156,14 @@ div button{
     .editar, .eliminar{
         border-radius: 0ch;
         border: none;
+        background-color: white;
+    }
+
+    .btnGuardar, .btnReset{
+        width: 10%;
+        height: 35px;
+        padding: 0.3rem;
+        border-radius: 50%;
     }
 }
 @media screen and (min-width: 576px){
@@ -181,6 +183,26 @@ div button{
 @media screen and (min-width: 1024px){
     .form-datos, .container-tabla{
         width: 40vw;
+        
+    }
+    
+    input::placeholder, select, .input-fNacimiento, .input-edad, .input-estadoCivil{
+        font-size: 0.45rem;
+        padding-left: 0.3rem;
+        color: #3c3c3c;
+    }
+
+    tbody{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    thead{
+        font-size: 12px;
+    }
+
+    .form-datos label{
+        font-size: 0.65rem;
         
     }
 }
