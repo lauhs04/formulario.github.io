@@ -19,8 +19,8 @@ function guardarDatosPersona(event){
     html +=          "<td>" + estadoCivil.textContent + "</td>";
     html +=          "<td>" + telefono.value + "</td>";
     html +=          "<td>";
-    html +=          "<button type='button' id='editar-" + filas + "' class='editar'><i class='fa-solid fa-pen-to-square'></i>Editar</button>";
-    html +=          "<button type='button' id='eliminar-" + filas + "' class='eliminar'><i class='fa-solid fa-trash-can'></i>Eliminar</button>";
+    html +=          "<button type='button' id='editar-" + filas + "' class='editar'><i class='fa-solid fa-pen-to-square'></i></button>";
+    html +=          "<button type='button' id='eliminar-" + filas + "' class='eliminar'><i class='fa-solid fa-trash-can'></i></button>";
     html +=     "</tr>";
  
     tabla.innerHTML += html;

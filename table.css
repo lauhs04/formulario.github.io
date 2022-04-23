@@ -7,7 +7,7 @@ body{
 }
 
 .form-datos, .container-tabla{
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
@@ -22,7 +22,7 @@ body{
 }
 
 div button{
-    width:100%;
+    width:40%;
     height: 35px;
 }
 
@@ -41,69 +41,63 @@ div button{
 }
 
 .table-datos tbody td{
-    border: 1px red solid;
+    border: 1px royalblue solid;
 
 }
 .container-btn{
    display: flex;
    flex-direction: row;
-   justify-content: center;
-   gap: 10px;
+   justify-content: space-around;
+   
+   
 }
-.btnGuardar, .btnReset{
+.btnGuardar, .btnReset, .editar, .eliminar{
     height: 35px;
-    width: 100px;
-    background-color: rgb(255, 255, 255);
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 5px;
     padding: 0;
 }
-@media screen and (min-width: 320px){
+
+@media screen and (min-width: 400px){
     body{
-        background-color: yellow;
+        background-color: rgb(255, 255, 255);
     }
 
-    .form-datos, .container-tabla{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1rem;
+    tbody{
+        
+        font-size: 12px;
     }
 
-    .tabla-datos th{
-        border: 1px rgb(212, 225, 65) solid;
-        background-color: #e6e6e6;
-        vertical-align: middle;
+    thead{
         font-size: 10px;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
     }
 
-    
-}
+    .form-datos label{
+        font-size: 0.7rem;
+    }
 
-@media screen and (min-width: 576px){
-    body{
-        background-color: red;
+    input::placeholder, select, .input-fNacimiento, .input-edad, .input-estadoCivil{
+        font-size: 0.6rem;
+        padding-left: 0.3rem;
+    }
+
+    .form-datos div input, .form-datos div select, .input-edad{
+        width: 250px;
+        height: 25px;
+    }
+
+    .btnGuardar, .btnReset, .editar, .eliminar{
+        height: 25px;
+        width: 70px;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 5px;
+        padding: 0;
+    }
+
+    .editar, .eliminar{
+        border-radius: 0ch;
+        border: none;
     }
 }
 
-
-@media screen and (min-width: 768px){
-    body{
-        background-color: blue;
-    }
-}
-
-
-@media screen and (min-width: 992px){
-    body{
-        background-color:green;
-    }
-}
-
-
-@media screen and (min-width: 1200px){
-    body{
-        background-color: white;
-    }
-}
