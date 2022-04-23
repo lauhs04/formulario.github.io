@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+
 body{
     font-family: sans-serif;
 }
 
+fieldset{
+    border-radius: 10px;
+    border-color: transparent;
+}
+
 input, select{
-background-color: #d1d1d1;
+background-color: #e6e6e6;
 }
 
 .form-datos{
@@ -60,6 +67,7 @@ div button{
     font-size: 1.2rem;
     margin-top: 20px; 
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 .tabla-datos th{
@@ -145,10 +153,15 @@ div button{
 @media screen and (min-width:576px){
     .btnGuardar, .btnReset, .editar, .eliminar{
         height: 25px;
-       color: #ffffff;
+        border: #3c3c3c 1px solid;
         background-color: none;
         border-radius: 5px;
         padding: 0;
+    }
+
+    .editar, .eliminar{
+        border-radius: 0ch;
+        border: none;
     }
 }
 @media screen and (min-width: 576px){
