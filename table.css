@@ -28,20 +28,20 @@ div button{
 
 .tabla-datos{
     width: 100%;
-    border: 3px royalblue solid;
+    border: 1px #3c3c3c solid;
     border-collapse: collapse;
     font-size: 1.2rem;
     margin-top: 20px;
 }
 
 .tabla-datos th{
-    border: 1px royalblue solid;
+    border: 1px #3c3c3c solid;
     background-color: #e6e6e6;
     vertical-align: middle;
 }
 
 .table-datos tbody td{
-    border: 1px royalblue solid;
+    border: 1px #3c3c3c;
 
 }
 .container-btn{
@@ -98,6 +98,15 @@ div button{
     .editar, .eliminar{
         border-radius: 0ch;
         border: none;
+    }
+
+    caption{
+        font-size: 0.6rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        text-align: left;
+        background-color: #3c3c3c;
+        color: #e6e6e6;
     }
 }
 
