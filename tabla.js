@@ -6,6 +6,7 @@ function guardarDatosPersona(event){
     let estadoCivil = document.querySelector("#estadoCivil option:checked");
     let telefono = document.getElementById("telefono");
     let accion = document.getElementById("accion");
+    let correoElectronico = document.getElementById("email");
 
     if(accion.value === "guardar"){   
     //innerHTML
@@ -24,7 +25,7 @@ function guardarDatosPersona(event){
     html +=     "</tr>";
  
     tabla.innerHTML += html;
-
+    
    /* document.getElementById("editar-"+filas).addEventListener("click", editar);
     document.getElementById("eliminar-"+filas).addEventListener("click", borrar);*/
 
