@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./juegos.css">
+</head>
+<body>
+    <h1>Juegos</h1>
+    <h3>Adivina el número</h3>
+    <p class="p-explicacion">Nosotros hemos seleccionado un número entre 1 y 100. Tienes 10 turnos para adivinarlo, te diremos si estás por encima o por debajo del número</p>
+    <div class="form">
+        <label for="campoAdivinar">Pon el número: </label>
+        <input type="text" id="campoAdivinar" class="campoAdivinar" >
+        <input type="submit" value="Adivinar número" class="campoEnviado">
+    </div>
+
+    <div class="resultados">
+        <p class="intentos"></p>
+        <p class="ultimoIntento"></p>
+        <p class="lowOrHi"></p>
+    </div>
+    <a href="../index.html">Volver</a>
+    <script src="./juegos.js"></script>
+</body>
+</html>
