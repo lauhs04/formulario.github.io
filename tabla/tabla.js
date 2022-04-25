@@ -1,3 +1,42 @@
+function cargarDatos(event){
+    datosStorage = localStorage.getItem("datosPersonas");
+    if(datosStorage){
+        datosStorage = JSON.parse(datosStorage);
+        datosStorage.forEach(datosPersona => {
+            adicionarFilas(datosPersona)
+        })
+    }
+}
+
+function adicionarFilas(datosPersona){
+    //innerHTML
+    let tabla = document.querySelector("#tabla-datoss tbody");
+    filas=tabla.childNodes.length + 1;
+    let html = "<tr id='datos-" + filas+"'>";
+    html +=          "<td>" + datosPersona.nombres+ "</td>";
+    html +=          "<td>" + datosPersona.apellidos + "</td>";
+    html +=          "<td>" + datosPersona.fNacimiento + "</td>";
+    html +=          "<td>" + datosPersona.edad+ "</td>";
+    html +=          "<td>" + datosPersona.estadoCivil+ "</td>";
+    html +=          "<td>" + datosPersona.telefono + "</td>";
+    html +=          "<td>";
+    html +=          "<button type='button' id='editar-" + filas + "' class='editar'><i class='fa-solid fa-pen-to-square'></i></button>";
+    html +=          "<button type='button' id='eliminar-" + filas + "' class='eliminar'><i class='fa-solid fa-trash-can'></i></button>";
+    html +=     "</tr>";
+
+    tabla.innerHTML += html;
+
+    let botonesEditar = tabla.getElementsByClassName("editar");
+    for(let i = 0; i <botonesEditar.length; i++){
+        botonesEditar[i].addEventListener("click",editar);
+    }
+
+    let botonesEliminar = tabla.getElementsByClassName("eliminar");
+    for(let i = 0; i < botonesEliminar.length; i++){
+        botonesEliminar[i].addEventListener("click",eliminar);
+    }
+}
+
 function guardarDatosPersona(event){
     let nombres = document.getElementById("nombres");
     let apellidos = document.getElementById("apellidos");
@@ -9,35 +48,30 @@ function guardarDatosPersona(event){
     let correoElectronico = document.getElementById("email");
 
     if(accion.value === "guardar"){   
-    //innerHTML
-    let tabla = document.querySelector("#tabla-datoss tbody");
-    filas=tabla.childNodes.length + 1;
-    let html = "<tr id='datos-" + filas+"'>";
-    html +=          "<td>" + nombres.value + "</td>";
-    html +=          "<td>" + apellidos.value + "</td>";
-    html +=          "<td>" + fNacimiento.value + "</td>";
-    html +=          "<td>" + edad.value + "</td>";
-    html +=          "<td>" + estadoCivil.textContent + "</td>";
-    html +=          "<td>" + telefono.value + "</td>";
-    html +=          "<td>";
-    html +=          "<button type='button' id='editar-" + filas + "' class='editar'><i class='fa-solid fa-pen-to-square'></i></button>";
-    html +=          "<button type='button' id='eliminar-" + filas + "' class='eliminar'><i class='fa-solid fa-trash-can'></i></button>";
-    html +=     "</tr>";
- 
-    tabla.innerHTML += html;
+        
+    let datosPersona = {
+        "nombres": nombres.value,
+        "apellidos":apellidos.value,
+        "fechaNacimiento": fNacimiento.value,
+        "edad":edad.value,
+        "estadoCivil":estadoCivil.textContent,
+        "telefono":telefono.value
+    };
+
+    adicionarFilas(datosPersona);
+
+    let datosStorage = localStorage.getItem("datosPersonas")
+
+    if(!datosStorage){
+        datosStorage = []
+    } else {
+        datosStorage = JSON.parse(datosStorage);
+    }
+
+    datosStorage.push(datosPersona);
+    localStorage.setItem("datosPersonas", JSON.stringify(datosStorage));
+
     
-   /* document.getElementById("editar-"+filas).addEventListener("click", editar);
-    document.getElementById("eliminar-"+filas).addEventListener("click", borrar);*/
-
-    let botonesEditar = tabla.getElementsByClassName("editar");
-    for(let i = 0; i <botonesEditar.length; i++){
-        botonesEditar[i].addEventListener("click",editar);
-    }
-
-    let botonesEliminar = tabla.getElementsByClassName("eliminar");
-    for(let i = 0; i < botonesEliminar.length; i++){
-        botonesEliminar[i].addEventListener("click",eliminar);
-    }
 } else {
     let id = document.getElementById("idDatos").value;
     let fila = document.getElementById(id);
