@@ -16,6 +16,7 @@ body {
 h1{
   text-align: center;
   font-size: 1.7rem;
+  color: #3c3c3c;
 }
 
 h3{
@@ -36,5 +37,38 @@ h3{
 }
 
 .campoEnviado{
-  margin-top: 10px;
+  width: 200px;
+  height: 35px;
+  margin-top: 22px;
+  background-color: rgb(86, 113, 150);
+  color: #e6e6e6;
+ border-color: transparent;
+ border-radius: 15px;
 }
+.form {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: baseline;
+  
+}
+.campoAdivinar{
+  width: 50px;
+  height: 50px;
+  padding:8px;
+}
+ label{
+   margin-left: 8px;
+   font-size: 1rem;
+   color: #3c3c3c;
+ }
+
+ .ultimoIntento{
+   border-radius: 50px;
+   height: 35px;
+   width: 300px;
+   text-align: center;
+   font-size: 0.9rem;
+   text-justify:distribute;
+ }

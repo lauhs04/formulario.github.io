@@ -19,7 +19,7 @@ function adivinar() {
 
      if (intentoJugador === numeroAleatorio) {
          ultimoIntento.textContent = "Felicidades!! ¡Lo lograste!";
-         ultimoIntento.style.backgroundColor = 'violet';
+         ultimoIntento.style.backgroundColor = 'green';
          lowOrHi.textContent= '';
          setGameOver();
      } else if (contador === 10){
@@ -27,11 +27,11 @@ function adivinar() {
          setGameOver();
      } else {
          ultimoIntento.textContent = 'Incorrecto';
-         ultimoIntento.style.backgroundColor = 'red';
+         ultimoIntento.style.backgroundColor = '#c42b4b';
          if(intentoJugador < numeroAleatorio){
-             lowOrHi.textContent= "el número es muy bajo";
+             lowOrHi.textContent= `El número es muy bajo`;
          } else if(intentoJugador > numeroAleatorio) {
-             lowOrHi.textContent = "el número es muy alto"
+             lowOrHi.textContent = "El número es muy alto"
          }
      }
 
