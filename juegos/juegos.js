@@ -1,4 +1,4 @@
-let numeroAleatorio = Math.floor(Math.random()*100)+1;
+/*let numeroAleatorio = Math.floor(Math.random()*100)+1;
 
 const intentos = document.querySelector('.intentos');
 const ultimoIntento = document.querySelector('.ultimoIntento');
@@ -70,4 +70,36 @@ function resetGame() {
 
     ultimoIntento.style.backgroundColor = 'white';
     numeroAleatorio = Math.floor(Math.random()*100)+1;
+}*/
+
+function cargarDatos(event){
+    datosStorage = localStorage.getItem("datosPersonas");
+    if(datosStorage){
+        datosStorage = JSON.parse(datosStorage);
+        datosStorage.forEach(datosPersona => {
+            adicionarFilas(datosPersona)
+        })
+    }
 }
+
+let datosPersona = {
+    "nombres": nombres.value,
+    "apellidos":apellidos.value,
+    "fechaNacimiento": fNacimiento.value,
+    "edad":edad.value,
+    "estadoCivil":estadoCivil.textContent,
+    "telefono":telefono.value
+};
+
+
+
+let datosStorage = localStorage.getItem("datosPersonas")
+
+if(!datosStorage){
+    datosStorage = []
+} else {
+    datosStorage = JSON.parse(datosStorage);
+}
+
+datosStorage.push(datosPersona);
+localStorage.setItem("datosPersonas", JSON.stringify(datosStorage));
