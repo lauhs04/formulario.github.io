@@ -19,12 +19,13 @@ header{
 }
 
 .logo-icon{
-    font-size: 6rem;
+    font-size: 2.5rem;
     color: #3c3c3c;
+    
 }
 
 .logo-icon2{
-    font-size: 2rem;
+    font-size: 1rem;
     color: #3c3c3c;
 }
 
@@ -34,7 +35,7 @@ header{
 }
 .link-logo{
     display: block;
-    width: 6rem;
+    width: 4rem;
 }
 
 
@@ -56,7 +57,11 @@ header{
     padding-left: 1rem;
     padding-right: 1rem;
     color: #3c3c3c;
-    font-weight: 200;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.fa-solid .fa-game-board-simple{
     font-size: 1rem;
 }
 
