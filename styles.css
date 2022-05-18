@@ -111,8 +111,9 @@ p{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        justify-content: left;
         gap: 2rem;
-        padding: 1rem 0;
+        padding: 1rem 3rem;
         background-color: rgb(255, 255, 255);
         
     }
